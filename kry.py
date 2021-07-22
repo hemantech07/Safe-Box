@@ -34,5 +34,11 @@ def decrypt(key, encryptedData):
 	rawData=''.join(charArray)
 	return rawData
 
-# if  __name__ == '__main__':
-# 	main()
+def main():
+	print('Test string: hello world!')
+	ans = encrypt(1997, 'hello world')
+	print('Encrypted String: ',ans)
+	print('Decrypted String: ',decrypt(1997,ans))
+	
+if  __name__ == '__main__':
+	main()
